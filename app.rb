@@ -24,8 +24,8 @@ post '/contact' do
   response = send_contact_message name, email, subject, body
 
   if response.code == 200
-    redirect to('http://withoutatracegame.com/contact/done'), 303
+    redirect to('https://withoutatracegame.com/contact/done'), 303
   else
-    redirect to('http://withoutatracegame.com/contact/error'), 303
+    redirect to('https://withoutatracegame.com/contact/error'), 303
   end
 end
